@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            background-color: aqua;
+            margin: 33px auto;
+        }
+
+        .item{
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(255, 230, 193);
+        }
+
+        #fruits{
+            float: right;
+            width: 49%;
+        
+        }
+        #computers{
+            float: left;
+            width: 49%;
+        
+        }
+
+        #books{
+            clear: both;
+            clear: left;
+            width: 99%;
+        
+        }
+
+        p,h3{
+            text-align: justify;
+        }
+
+        h1{
+            margin: 23px auto;
+            width: 455px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to my groosery shop</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi reiciendis suscipit et ipsam voluptates minus in quaerat dolor impedit quis ullam, sunt at eos officia ad tenetur, tempore praesentium neque facilis quisquam odit.
+            </p>
+        </div>
+
+        <div id="computers" class="item">
+            <h3>computers</h3>
+            <p id="computerspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi reiciendis suscipit et ipsam voluptates minus in quaerat dolor impedit quis ullam, sunt at eos officia ad tenetur, tempore praesentium neque facilis quisquam odit.
+            </p>
+        </div>
+
+        <div id="books" class="item">
+            <h3>books</h3>
+            <p id="bookspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi reiciendis suscipit et ipsam voluptates minus in quaerat dolor impedit quis ullam, sunt at eos officia ad tenetur, tempore praesentium neque facilis quisquam odit.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
